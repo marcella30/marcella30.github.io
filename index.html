@@ -1,135 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
         * {
             box-sizing: border-box;
         }
-
-        .container {
+        .container  {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
-            width: 90%;
+            width: 95%;
             margin: 100px auto;
-
         }
-
-        [class*='box'] {
-            box-shadow: 0 0 17px 13px rgba(0, 0, 0, 0.1);
+        [class*='box']{
+            box-shadow: 0 0 7px 5px black;
             padding: 10px;
-            border-radius: 5px;
+            border-radius: 0px;
         }
-
-        .media {
-            box-shadow: 0 0 17px 13px rgba(0, 0, 0, 0.1);
+        .media{
+            box-shadow: 0 0 7px 5px grey;
             border-radius: 5px;
             height: 80px;
             width: 100px;
             float: right;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: 100%;
+            background-position: center;
+        }
+        ul {
+            display: flex;
+            list-style: none;
+            box-shadow: 0 0 7px 5px grey;
+        }
+        li {
+            padding: 12px;
+            border-radius: 2px;
+            box-shadow: 0 0 0px 1px grey;
+        a {
+            text-decoration: none;
+            color: black;
         }
 
-        .box-1 {
-            grid-row-start: 1;
-            grid-row-end: 4;
+        p {
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        .box-1>.media {
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    }
+        @media only screen and (max-width: 768px) {
+        .container, ul {
+            display: block;
+        }
+    }
+        .box-1{
+            grid-row-start: 1 ;
+            grid-row-end: 4 ;
+        }
+        .box-1 > .media{
             width: 100%;
             height: 200px;
-            margin-bottom: 25PX;
+            margin-bottom: 25px;
             background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6y1K0bKmRWcYCMVhYKEOcWp3jn78iFYihpOjyv3M4yyP7wCER);
         }
+        .box-2{
 
-        ul {
-            list-style: none;
-            display: flex;
-            box-shadow: 0 0 17px 3px rgba(0, 0, 0, 1);
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: white;
-            padding: 15px;
-            margin-top: 0;
-        }
-
-        li {
-            padding: 10px;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 14PX;
-        }
-        .box-1 > p , .box-1 > h2{
-            padding-left: 10px;
         }
         .box-2 > .media{
-            background-image: url();
+            width: 100%;
+            height: 50px;
+            margin-bottom: 25px;
+            background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6y1K0bKmRWcYCMVhYKEOcWp3jn78iFYihpOjyv3M4yyP7wCER);
         }
-        a{ 
-            color: rgb(0, 0, 0);
+        .box-3{
+
         }
-        @media only screen and (max-width: 768px) {
-            .container,ul {
-                display: block;
-            }
+        .box-4{
+
         }
+        .box-5{
+
+        }
+        .box-6{
+
+        }
+        .box-7{
+
+        }
+
     </style>
 </head>
-
 <body>
     <ul>
-        <li>home</li>
-        <li>course</li>
-        <li>blog</li>
-        <li>portfolio</li>
-        <li>about</li>
+        <li><a href="https://fahganindo4life.my.id/#">Home</a></li>
+        <li><a href="https://fahganindo4life.my.id/#">Course</a></li>
+        <li><a href="https://fahganindo4life.my.id/#">Blog</a></li>
+        <li><a href="https://fahganindo4life.my.id/#">Portofolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://fahganindo4life.my.id/#">Easter Egg</a></li>
     </ul>
     <div class="container">
         <div class="box-1">
             <div class="media"></div>
-            <h2>title</h2>
+            <h2>Title</h2>
             <p>content</p>
         </div>
         <div class="box-2">
             <div class="media"></div>
-            <h2>title</h2>
+            <h2>Title</h2>
             <p>content</p>
         </div>
         <div class="box-3">
             <div class="media"></div>
-            <h2>title</h2>
+            <h2>Title</h2>
             <p>content</p>
         </div>
         <div class="box-4">
             <div class="media"></div>
-            <h2>title</h2>
+            <h2>Title</h2>
             <p>content</p>
         </div>
         <div class="box-5">
             <div class="media"></div>
-            <h2>title</h2>
+            <h2>Title</h2>
             <p>content</p>
         </div>
         <div class="box-6">
             <div class="media"></div>
-            <h2>title</h2>
+            <h2>Title</h2>
             <p>content</p>
         </div>
         <div class="box-7">
             <div class="media"></div>
-            <h2>title</h2>
+            <h2>Title</h2>
             <p>content</p>
         </div>
     </div>
-</body>
+    
 
-</html>
+
+</body></html>
+
+ 
+    
+          
