@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  border-radius: 90%;
+  width: 90%;
+  margin: 100px auto;
+}
+[class*="box"] {
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+.media {
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  height: 100px;
+  width: 90px;
+  float: right;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  box-shadow: 0 0 17px 3px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  align-items: center;
+  padding: 15px 10px;
+  margin-top: 0;
+}
+
+ul :hover {
+  background-color: rgb(0, 0, 0, 0.1);
+  transition: 0.1s ease-in-out;
+  border-radius: 95px;
+}
+
+li {
+  padding: 10px;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+p {
+  font-weight: 300;
+  color: grey solid 2px;
+}
+
+.box-1 > p {
+  padding-left: 10px;
+}
+
+[class*="box"] > p {
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.box {
+  margin: 5px;
+}
+
+.container :hover {
+  background-color: color-mix(
+    in srgb,
+    rgb(129, 33, 207) 50%,
+    rgb(106, 47, 201) 50%
+  );
+  transition: 0.2s ease-in-out;
+}
+
+h3 p:hover {
+  display: block;
+  transform: scale(1.1);
+}
+a:hover {
+  display: block;
+  color: rgb(255, 255, 255);
+}
+
+h3:hover,
+p:hover,
+.box:hover {
+  color: white;
+}
+
+i:hover {
+  background: white;
+  background-color: white;
+}
+
+.media:hover,
+.box:hover {
+  transform: scale(1.1);
+}
+
+.portofolio {
+  background-color: red;
+}
+@media only screen and (max-width: 768px) {
+  .container,
+  ul {
+    display: block;
+    grid-template-columns: 1fr;
+  }
+}
+span > a {
+  padding: 8 px;
+  box-shadow: 0 0 17px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.bi-facebook {
+  color: blue;
+}
+.bi-instagram {
+  color: rgb(206, 31, 60);
+}
+.bi-browser-edge {
+  color: rgb(34, 34, 127);
+}
