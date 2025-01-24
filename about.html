@@ -1,146 +1,173 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>About</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-        .container  {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            width: 95%;
-            margin: 100px auto;
-        }
-        [class*='box']{
-            box-shadow: 0 0 7px 5px black;
-            padding: 10px;
-            border-radius: 0px;
-        }
-        .media{
-            box-shadow: 0 0 7px 5px grey;
-            border-radius: 5px;
-            height: 80px;
-            width: 100px;
-            float: right;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-position: center;
-        }
-        ul {
-            display: flex;
-            list-style: none;
-            box-shadow: 0 0 7px 5px grey;
-        }
-        li {
-            padding: 12px;
-            border-radius: 2px;
-            box-shadow: 0 0 0px 1px grey;
-        a {
-            text-decoration: none;
-            color: black;
-        }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        font-size: 1rem;
+        width: 90%;
+        margin: 100px auto;
+      }
+      [class*="box"] {
+        box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .media {
+        box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        height: 50px;
+        width: 100px;
+        float: right;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .box-1 {
+        grid-row-start: 1;
+        grid-row-end: 4;
+      }
+      .box-1 > p {
+        padding-left: 10px;
+      }
+      .box-1 > .media {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 25px;
+        background-image: url(SELA.jpeg);
+      }
 
-        p {
-            font-family: Arial, Helvetica, sans-serif;
-        }
+      .box-2 > .media {
+        width: 30%;
+        height: 80px;
+      }
 
-        h2 {
-            font-family: Arial, Helvetica, sans-serif;
-        }
+      .box-3 {
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 4;
+      }
 
+      .box-3 > .media {
+        width: 30%;
+        height: 80px;
+        background-image: url();
+      }
+
+      .box-4 > .media {
+        background-image: url(https://th.bing.com/th/id/OIP.OAkjPbajbNfp2yeeM3UyBQHaHa?w=179&h=180&c=7&r=0&o=5&pid=1.7https://th.bing.com/th/id/OIP.MlcQALw_uf0y4kdqlI1RCQAAAA?w=175&h=180&c=7&r=0&o=5&pid=1.7) ;
+        height: 90px;
+        border: 100px 80px 80px 100px
+      }
+
+      .box-5 > .media {
+        background-image: url(https://th.bing.com/th/id/OIP.MlcQALw_uf0y4kdqlI1RCQAAAA?w=204&h=206&c=7&r=0&o=5&pid=1.7) ;
+        height: 90px;
+        border: 100px 80px 80px 100px
     }
-        @media only screen and (max-width: 768px) {
-        .container, ul {
+
+      .box-6 > .media {
+        background-image: url(https://th.bing.com/th/id/OIP.IOv5YhTdohsQj9dwwt_MywHaHa?w=181&h=181&c=7&r=0&o=5&pid=1.7);
+        height: 90px;
+        border: 100px 80px 80px 100px
+      }
+
+      .box-6 {
+        grid-column-start: 2;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .container,
+        ul {
+          display: block;
+          border: 1fr;
+        }
+
+        nav li a {
+            display: inline-flex;
+            justify-content: center;
+            border: 1fr 10%;
+            flex-direction: row;
+        }
+
+        nav ul {
             display: block;
         }
-    }
-        .box-1{
-            grid-row-start: 1 ;
-            grid-row-end: 4 ;
-        }
-        .box-1 > .media{
-            width: 100%;
-            height: 200px;
-            margin-bottom: 25px;
-            background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6y1K0bKmRWcYCMVhYKEOcWp3jn78iFYihpOjyv3M4yyP7wCER);
-        }
-        .box-2{
-
-        }
-        .box-2 > .media{
-            width: 100%;
-            height: 50px;
-            margin-bottom: 25px;
-            background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6y1K0bKmRWcYCMVhYKEOcWp3jn78iFYihpOjyv3M4yyP7wCER);
-        }
-        .box-3{
-
-        }
-        .box-4{
-
-        }
-        .box-5{
-
-        }
-        .box-6{
-
-        }
-        .box-7{
-
-        }
-
+        
+      }
     </style>
-</head>
-<body>
-    <ul>
-        <li><a href="https://fahganindo4life.my.id/#">Home</a></li>
-        <li><a href="https://fahganindo4life.my.id/#">Course</a></li>
-        <li><a href="https://fahganindo4life.my.id/#">Blog</a></li>
-        <li><a href="https://fahganindo4life.my.id/#">Portofolio</a></li>
-        <li><a href="https://fahganindo4life.my.id/#">About</a></li>
-        <li><a href="https://fahganindo4life.my.id/#">Easter Egg</a></li>
-    </ul>
-    <div class="container">
-        <div class="box-1">
-            <div class="media"></div>
-            <h2>Title</h2>
-            <p>content</p>
-        </div>
-        <div class="box-2">
-            <div class="media"></div>
-            <h2>Title</h2>
-            <p>content</p>
-        </div>
-        <div class="box-3">
-            <div class="media"></div>
-            <h2>Title</h2>
-            <p>content</p>
-        </div>
-        <div class="box-4">
-            <div class="media"></div>
-            <h2>Title</h2>
-            <p>content</p>
-        </div>
-        <div class="box-5">
-            <div class="media"></div>
-            <h2>Title</h2>
-            <p>content</p>
-        </div>
-        <div class="box-6">
-            <div class="media"></div>
-            <h2>Title</h2>
-            <p>content</p>
-        </div>
-        <div class="box-7">
-            <div class="media"></div>
-            <h2>Title</h2>
-            <p>content</p>
-        </div>
-    </div>
+  </head>
+  <body>
+    
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/teams.html">Teams</a></li>
+            <li><a href="/course.html">Course</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="portfolio.html">Portofolio</a></li>
+          </ul>
     
 
+    <div class="container">
+      <div class="box-1">
+        <div class="media"></div>
+        <h3>Profile</h3>
+        <p>
+            Hi, I'm Marcella Setya Ningsih Putri, i'm a Student based in LP3I. I specialize in Web Developer, and I have 1 year of experience working with clients from various industries, including ASE Group.
 
-</body></html>
+            and I am dedicated to helping brands and individuals achieve their goals through . And my hobbies are cooking.
+           
+           Please take a look at my portfolio to see some of my recent work. I’m always open to new opportunities, so feel free to get in touch!</p>
+        </p>   
+        <div class="sosmed"> 
+        <a href="https://www.instagram.com/marcelasetyaning?igsh=MXNrM2Vvc2tkZWVi">
+            <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://wa.me/083167716324">
+            <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="mailto:msetyaningputri@gmail.com">
+                <i class="bi bi-envelope-at"></i>
+            </a>
+            <i class="bi bi-linkedin"></i>
+        </div>
+      </div>
+      <div class="box-2">
+        <h3>EDUCATION</h3>
+      <div class="box-4">
+        <div class="media"></div>
+        <h3>SDN Tegal Kembang</h3>
+        <p>2012 - 2018</p>
+      </div>
+      <div class="box-5">
+        <div class="media"></div>
+        <h3>SMPN 8 Kota Serang</h3>
+        <p>2019 - 2021</p>
+      </div>
+      <div class="box-6">
+        <div class="media"></div>
+        <h3>SMAN 8 Kota Serang</h3>
+        <p>2021  - 2024</p>
+      </div>
+    </div>
+    <div class="box-3">
+        <h3>EXPERIENCE</h3>
+        <p>Masak</p>
+        <p>Scroll Tiktok</p>
+        <p>Rebahan</p>
+      </div>
+    </div>
+  </body>
+</html>
