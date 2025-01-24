@@ -1,150 +1,226 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <style>
-        * {
-            box-sizing: border-box;
-        }
-        .container  {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            width: 95%;
-            margin: 100px auto;
-        }
-        [class*='box']{
-            box-shadow: 0 0 7px 5px black;
-            padding: 10px;
-            border-radius: 0px;
-        }
-        .media{
-            box-shadow: 0 0 7px 5px grey;
-            border-radius: 5px;
-            height: 80px;
-            width: 100px;
-            float: right;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-position: center;
-        }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        font-size: 33px;
+      }
+
+      nav {
+        font-size: 1.2rem;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 90%;
+        margin: 100px auto;
+        font-size: 1rem;
+        background-color: white;
+      }
+
+      [class*="box"] {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+
+      .media {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        height: 80px;
+        width: 100px;
+        float: right;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+      }
+
+      .nedia:hover {
+        transform: scale(1.1);
+      }
+
+      .box-1 {
+        grid-row-start: 1;
+        grid-row-end: 4;
+      }
+
+      .box-1 .media {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 25px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuH0demJFf89yJBj2_oQxQQp-PjsqwXeh1rA&s");
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        box-shadow: 0 0 17px 3px rgba(0, 0, 0, 0.1);
+        top: 0;
+        margin-top: 0;
+        width: 100%;
+        background-color: white;
+        padding: 15px;
+      }
+
+      li {
+        padding: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      ul li a:hover {
+        color: aqua;
+        display: block;
+        transition: 0.3s;
+      }
+
+      a:hover .active {
+        color: aqua;
+        display: block;
+      }
+      @media only screen and (max-width: 768px) {
+        .container,
         ul {
-            display: flex;
-            list-style: none;
-            box-shadow: 0 0 7px 5px grey;
+          display: block;
         }
-        li {
-            padding: 12px;
-            border-radius: 2px;
-            box-shadow: 0 0 0px 1px grey;
-        a {
-            text-decoration: none;
-            color: black;
-        }
+      }
 
-        p {
-            font-family: Arial, Helvetica, sans-serif;
-        }
+      .media:hover {
+        transform: scale(1.1);
+      }
 
-        h2 {
-            font-family: Arial, Helvetica, sans-serif;
-        }
+      .boxs:hover p{
+        background: black;
+        
+        
+      }
+      .box-1 > p,
+      .box-1 > h3 {
+        padding-left: 10px;
+      }
 
-    }
-        @media only screen and (max-width: 768px) {
-        .container, ul {
-            display: block;
-        }
-    }
-        .box-1{
-            grid-row-start: 1 ;
-            grid-row-end: 4 ;
-        }
-        .box-1 > .media{
-            width: 100%;
-            height: 200px;
-            margin-bottom: 25px;
-            background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6y1K0bKmRWcYCMVhYKEOcWp3jn78iFYihpOjyv3M4yyP7wCER);
-        }
-        .box-2{
+      .box-2 .media {
+        background-image: url("https://th.bing.com/th/id/R.e1d424c4b9be7009dd57ef4e7d58e343?rik=EZ8NO5x85jZ0Vg&riu=http%3a%2f%2f1.bp.blogspot.com%2f-NGHwBncyA68%2fUiMm_8b2ZUI%2fAAAAAAAAAnA%2f17OGXCKI4zE%2fs1600%2fLogo%2bHTML5.JPG&ehk=rnVe3RUksYQ4LMnsZ6Xxyf3F5lkj3Br1Eu6vOVCkYh0%3d&risl=&pid=ImgRaw&r=0");
+      }
 
-        }
-        .box-2 > .media{
-            width: 100%;
-            height: 50px;
-            margin-bottom: 25px;
-            background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6y1K0bKmRWcYCMVhYKEOcWp3jn78iFYihpOjyv3M4yyP7wCER);
-        }
-        .box-3{
+      .box-3 .media {
+        background-image: url("https://th.bing.com/th/id/OIP.lXTS-ivpkNE8ruOEVQjaGAAAAA?w=474&h=302&rs=1&pid=ImgDetMain");
+      }
 
-        }
-        .box-4{
+      .box-4 .media {
+        background-image: url("https://static.vecteezy.com/system/resources/previews/000/304/787/original/vector-responsive-web-design.jpg");
+      }
 
-        }
-        .box-5{
+      .box-5 .media {
+        background-image: url("data:image/jpeg;base64,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");
+      }
 
-        }
-        .box-6{
+      .box-6 .media {
+        background-image: url("https://th.bing.com/th/id/OIP.JNXT8kd8CHk5Z-w5FN7lrQHaEc?rs=1&pid=ImgDetMain");
+      }
 
-        }
-        .box-7{
-
-        }
-
+      .box-7 .media {
+        background-image: url("https://static.vecteezy.com/system/resources/previews/025/270/403/non_2x/github-logo-icon-free-vector.jpg");
+      }
     </style>
-</head>
-<body>
-    <ul>
-        <li><a href="https://fahganindo4life.my.id/#">Home</a></li>
-        <li><a href="https://fahganindo4life.my.id/#">Course</a></li>
-        <li><a href="https://fahganindo4life.my.id/#">Blog</a></li>
-        <li><a href="https://fahganindo4life.my.id/#">Portofolio</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="https://fahganindo4life.my.id/#">Easter Egg</a></li>
-    </ul>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li class="active"><a href="/index.html">Home</a></li>
+        <li><a href="/course.html">Course</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="portfolio.html">Portofolio</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/teams.html">Teams</a></li>
+      </ul>
+    </nav>
+
     <div class="container">
-        <div class="box-1">
-            <div class="media"></div>
-            <h2>Title</h2>
-            <p>content</p>
-        </div>
-        <div class="box-2">
-            <div class="media"></div>
-            <h2>Title</h2>
-            <p>content</p>
-        </div>
-        <div class="box-3">
-            <div class="media"></div>
-            <h2>Title</h2>
-            <p>content</p>
-        </div>
-        <div class="box-4">
-            <div class="media"></div>
-            <h2>Title</h2>
-            <p>content</p>
-        </div>
-        <div class="box-5">
-            <div class="media"></div>
-            <h2>Title</h2>
-            <p>content</p>
-        </div>
-        <div class="box-6">
-            <div class="media"></div>
-            <h2>Title</h2>
-            <p>content</p>
-        </div>
-        <div class="box-7">
-            <div class="media"></div>
-            <h2>Title</h2>
-            <p>content</p>
-        </div>
+        <div class="boxs">
+      <div class="box-1">
+        <div class="media"></div>
+        <h3>LP3I College Banten</h3>
+        <p>
+          LP3I College adalah lembaga pendidikan 2 tahun siap kerja yang
+          dibekali dengan program pendidikan dengan ilmu terapan yang spesifik.
+          Setiap lulusan dari LP3I College akan mendapatkan sertifikasi profesi
+          yang dapat digunakan untuk mendapatkan kerja.
+        </p>
+        <span>1. Bussines</span>
+        <p>A. Digital Bussines Management</p>
+        <p>B. Office Administration Automatization</p>
+        <p>C. Professional Administratif Assistant</p>
+        <span>2. Finance</span>
+        <p>A. Accounting Informatin System</p>
+        <span>3. Technology</span>
+        <p>A. Application Software Enggenering</p>
+      </div>
+      <div class="box-2">
+        <div class="media"></div>
+        <h3>Pengenalan dan Struktur Dasar HTML</h3>
+        <p>
+          Belajar Atribut HTML, Basic Elemen, Teks Terformat, Semantic HTML,
+          Table and List, Link, Image, dan Form
+        </p>
+        <p>5 Bulan yang lalu</p>
+      </div>
+      <div class="box-3">
+        <div class="media"></div>
+        <h3>Pengenalan Style dan Penulisan CSS</h3>
+        <p>
+          Belajar Cara Menambahkan CSS, Color, Background, Formatting Text, Text
+          Styling, Box Element, Border, Padding and Margin, Box Shadow & Rounded
+          Corner, Positioning
+        </p>
+        <p>3 Bulan yang lalu</p>
+      </div>
+      <div class="box-4">
+        <div class="media"></div>
+        <h3>Layout Responsif</h3>
+        <p>Belajar Meta Viewport, Media Query, Flexbox, and Grid</p>
+        <p>4 Bulan yang lalu</p>
+      </div>
+      <div class="box-5">
+        <div class="media"></div>
+        <h3>Pengenalan Javascript</h3>
+        <p>
+          Belajar Dasar-dasar Javascript, Browser Object Model, Document Object
+          Model, Event, Latihan Event & DOM
+        </p>
+        <p>3 Bulan yang lalu</p>
+      </div>
+      <div class="box-6">
+        <div class="media"></div>
+        <h3>AJAX</h3>
+        <p>Belajar Pengenalan AJAX, Request, Fecth API</p>
+        <p>2 Bulan yang lalu</p>
+      </div>
+      <div class="box-7">
+        <div class="media"></div>
+        <h3>Publish</h3>
+        <p>DNS Server, Instalasi Domain ID, Menggunakan Hosting GitHub Page</p>
+        <p>1 Bulan yang lalu</p>
+      </div>
     </div>
-    
-
-
-</body></html>
-
- 
-    
-          
+    </div>
+  </body>
+</html
